@@ -1,0 +1,21 @@
+/*======================================
+        Footer
+======================================*/
+.footer {
+    padding-top: 80px;
+    .social {
+        padding: 50px 0 70px;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 0 30px;
+        }
+    }
+    .copyright {
+        background: #f9c14a;
+        text-align: center;
+        padding: 30px 0;
+    }
+}

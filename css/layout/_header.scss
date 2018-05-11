@@ -1,0 +1,40 @@
+/*======================================
+        Header
+======================================*/
+.header {
+    background: $color-o;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 18px;
+    .logo {
+        width: 30%;
+    }
+    .nav {
+        color: $color-a;
+        width: 70%;
+        font-size: 1.4rem;
+    }
+    .nav_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        li {
+            &:not(:first-child) {
+                padding-left: 55px;
+            }
+            a {
+                display: block;
+            }
+        }
+    }
+    .nav_button {
+        display: block;
+        padding: 14px 40px 10px;
+        background: #ffca00;
+        color: #383b41;
+        font-size: 1.6rem;
+        border-radius: 50px;
+    }
+}

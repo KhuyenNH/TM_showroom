@@ -1,0 +1,45 @@
+/*------------------- Wraper -------------------*/
+.wrapper {
+    // min-width: 1003px;
+    // overflow: hidden;
+}
+.row_clear {
+    @extend %clearfix;
+}
+.container {
+    // @extend %clearfix;
+    max-width: 1003px;
+    width: 100%;
+    margin: 0 auto;
+    // padding: 0 15px;
+}
+
+/*------------------- Component -------------------*/
+// /*------------------- Typography -------------------*/
+.title_h2 {
+    text-align: center;
+}
+.title_h3 {
+    // font-size: 24px;
+    // line-height: 1.8;
+    // color: $color-primary;
+    // font-weight: bold;
+}
+.title_A {
+    // font-size: 24px;
+    // color: $color-primary;
+    // line-height: 1.8;
+    // font-weight: bold;
+}
+.title_B {
+    // font-size: 24px;
+    // line-height: 1.8;
+    // color: $color-primary;
+    // font-weight: bold;
+}
+.text {
+    line-height: 1.5;
+    // padding:
+    // font-size: ;
+    // color:
+}
