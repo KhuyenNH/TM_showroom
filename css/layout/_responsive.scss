@@ -1,0 +1,121 @@
+/*-----------------------
+        Responsive for device < 767px
+-----------------------------------------*/
+@media screen and (max-width: 767px) {
+    .is_pc {
+        display: none;
+    }
+    .is_sp {
+        display: inherit;
+    }
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    /*------------------- Typography_SP -------------------*/
+    .title_h2 {
+        // font-size: 24px;
+        // color: $color-primary;
+        // line-height: 1.8;
+        // font-weight: bold;
+    }
+    .title_h3 {
+        // font-size: 24px;
+        // line-height: 1.8;
+        // color: $color-primary;
+        // font-weight: bold;
+    }
+    .title_h4 {
+        // font-size: 24px;
+        // color: $color-primary;
+        // line-height: 1.8;
+        // font-weight: bold;
+    }
+    .text {
+        // padding:
+        // font-size: ;
+        // color:
+    }
+    .header {
+        .logo {
+            width: 100%;
+            text-align: center;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo_in {
+            width: 75%;
+        }
+        .toggle_nav {
+            width: 15%;
+        }
+        .nav {
+            display: none;
+            width: 100%;
+        }
+        .nav_list {
+            justify-content: flex-start;
+            li {
+                font-size: 1.8rem;
+                text-align: right;
+                width: 100%;
+                margin: 20px 5px;
+                &:not(:first-child) {
+                    padding-left: 0;
+                }
+            }
+        }
+        .nav_button {
+            display: inline-block!important;
+        }
+    }
+    .main_visual {
+        height: 400px;
+        .title_h2 {
+            width: 60%;
+        }
+    }
+    .section_01 {
+        .listItems {
+            .items {
+                width: 100%;
+                &:nth-child(odd) {
+                    padding-right: 0;
+                }
+                &:nth-child(even) {
+                    padding-left: 0;
+                }
+            }
+        }
+        .avatar {
+            padding-top: 20px !important;
+            text-align: center;
+        }
+        .listItem_02 {
+            flex-direction: column-reverse;
+        }
+    }
+    .section_02 {
+        .description {
+            padding: 45px 0 40px;
+        }
+    }
+    .section_04 {
+        .listItems {
+            .items {
+                width: 100%;
+            }
+        }
+    }
+    .footer {
+        .social {
+            a {
+                margin: 0 10px;
+                width: 15%;
+            }
+        }
+    }
+}

@@ -1,3 +1,14 @@
+var wBrowser = $(window).width();
+if (wBrowser < 768) {
+    var posScroll = 0;
+} else {
+    var posScroll = 100;
+}
+var heightHead = $('.header').height();
+$('.page-body').css("padding-top", heightHead);
+$('.toggle_nav').click(function(event) {
+    $('.nav').stop().slideToggle();
+});
 /* Reponsive for meta
 -------------------------------------- */
 $(window).resize(function() {
@@ -7,3 +18,18 @@ $(window).resize(function() {
         $('meta[name="viewport"]').attr('content', 'width=device-width, user-scalable=no, shrink-to-fit=no');
     }
 }).resize();
+
+/* Fade scroll
+-------------------------------------- */
+window.onload = function() {
+    $(window).scroll(function() {
+        $('.fadeUp, .fadeLeft, .fadeIn').each(function() {
+            let elemPos = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + posScroll) {
+                $(this).addClass('ef-slide');
+            }
+        });
+    }).trigger("scroll");
+}
