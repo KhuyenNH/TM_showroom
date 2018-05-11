@@ -4,11 +4,6 @@ if (wBrowser < 768) {
 } else {
     var posScroll = 100;
 }
-var heightHead = $('.header').height();
-$('.page-body').css("padding-top", heightHead);
-$('.toggle_nav').click(function(event) {
-    $('.nav').stop().slideToggle();
-});
 /* Reponsive for meta
 -------------------------------------- */
 $(window).resize(function() {
@@ -18,6 +13,12 @@ $(window).resize(function() {
         $('meta[name="viewport"]').attr('content', 'width=device-width, user-scalable=no, shrink-to-fit=no');
     }
 }).resize();
+
+var heightHead = $('.header').height();
+$('.page-body').css("padding-top", heightHead);
+$('.toggle_nav').click(function(event) {
+    $('.nav').stop().slideToggle();
+});
 
 /* Fade scroll
 -------------------------------------- */

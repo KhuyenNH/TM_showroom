@@ -31,14 +31,14 @@
         ul {
             padding: 25px 0;
         }
-        .items {
-            &:nth-child(odd) {
-                padding-right: 28px;
-            }
-            &:nth-child(even) {
-                padding-left: 28px;
-            }
-        }
+        // .items {
+        //     &:nth-child(odd) {
+        //         padding-right: 28px;
+        //     }
+        //     &:nth-child(even) {
+        //         padding-left: 28px;
+        //     }
+        // }
     }
     .avatar {
         padding-top: 65px;

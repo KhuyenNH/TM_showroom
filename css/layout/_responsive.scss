@@ -79,17 +79,17 @@
         }
     }
     .section_01 {
-        .listItems {
-            .items {
-                width: 100%;
-                &:nth-child(odd) {
-                    padding-right: 0;
-                }
-                &:nth-child(even) {
-                    padding-left: 0;
-                }
-            }
-        }
+        // .listItems {
+        //     .items {
+        //         width: 100%;
+        //         &:nth-child(odd) {
+        //             padding-right: 0;
+        //         }
+        //         &:nth-child(even) {
+        //             padding-left: 0;
+        //         }
+        //     }
+        // }
         .avatar {
             padding-top: 20px !important;
             text-align: center;
