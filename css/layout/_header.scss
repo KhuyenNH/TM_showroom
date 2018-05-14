@@ -5,8 +5,8 @@
     position: fixed;
     left: 0;
     right: 0;
-    z-index: 99;
-    background: $color-o;
+    z-index: 9999;
+    background: #26292f;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -34,11 +34,11 @@
         }
     }
     .nav_button {
-        display: block;
-        padding: 14px 40px 10px;
-        background: #ffca00;
-        color: #383b41;
-        font-size: 1.6rem;
-        border-radius: 50px;
+        // display: block;
+        // padding: 14px 40px 10px;
+        // background: #ffca00;
+        // color: #383b41;
+        // font-size: 1.6rem;
+        // border-radius: 50px;
     }
 }

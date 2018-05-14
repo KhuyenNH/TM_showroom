@@ -2,6 +2,9 @@
         Footer
 ======================================*/
 .footer {
+    position: relative;
+    z-index: 99;
+    background: $color-a;
     padding-top: 80px;
     .social {
         padding: 50px 0 70px;
