@@ -87,7 +87,8 @@ var ParallaxScroll = {
                 if (scrollTo == undefined) scrollTo = scrollFrom + scrollDistance;
                 scrollTo = scrollTo | 0;
                 var smoothness = data["smoothness"];
-                if (smoothness == undefined) smoothness = 30;
+                // transition smooth
+                if (smoothness == undefined) smoothness = 10;
                 smoothness = smoothness | 0;
                 if (noSmooth || smoothness == 0) smoothness = 1;
                 smoothness = smoothness | 0;

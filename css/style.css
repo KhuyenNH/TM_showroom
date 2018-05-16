@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .row_clear:after {
   content: "";
   clear: both;
@@ -63,7 +62,7 @@ html {
 }
 
 body {
-  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: #000;
   font-size: 1.4rem;
 }
@@ -116,8 +115,28 @@ button:focus, input:focus, a:focus {
   text-align: center;
 }
 
+.title_h2 .tit_txt {
+  text-align: center;
+  font-size: 4rem;
+  color: #383b41;
+  font-weight: bold;
+  margin-top: -18px;
+}
+
+.title_h3 {
+  position: relative;
+}
+
+.title_h3 .tit_txt {
+  line-height: 1.3;
+  font-size: 4rem;
+  color: #383b41;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
 .text {
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .fadeUp {
@@ -266,6 +285,7 @@ button:focus, input:focus, a:focus {
 ======================================*/
 .header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
@@ -305,12 +325,32 @@ button:focus, input:focus, a:focus {
   align-items: center;
 }
 
-.header .nav_list li:not(:first-child) {
-  padding-left: 55px;
+.header .nav_list li {
+  font-weight: bold;
+}
+
+.header .nav_list li:first-child {
+  padding-right: 55px;
+}
+
+.header .nav_list li:nth-child(2) {
+  padding-right: 60px;
+}
+
+.header .nav_list li:nth-child(3) {
+  padding-right: 62px;
+}
+
+.header .nav_list li:nth-child(4) {
+  padding-right: 45px;
 }
 
 .header .nav_list li a {
   display: block;
+}
+
+.page-body {
+  background: #ffffff;
 }
 
 /*    main_visual
@@ -319,9 +359,11 @@ button:focus, input:focus, a:focus {
   position: fixed;
   left: 0;
   right: 0;
-  height: 680px;
-  background: url("../images/main.jpg") no-repeat left center;
+  background: url("../images/bg_main.jpg") no-repeat left center;
   background-size: cover;
+}
+
+.main_visual .main_visual_in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,10 +373,21 @@ button:focus, input:focus, a:focus {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  height: 620px;
+  margin-right: -140px;
+  background: url("../images/main_visual-img.png") no-repeat right bottom;
 }
 
 .main_visual .title_h2 {
-  margin-left: 6%;
+  margin-left: -62px;
+}
+
+.main_visual.removeBg {
+  background: #ffffff !important;
+}
+
+.main_visual.removeBg .main_visual_in {
+  background: #ffffff !important;
 }
 
 .main {
@@ -342,17 +395,21 @@ button:focus, input:focus, a:focus {
   position: relative;
   z-index: 999;
   background: #ffffff;
-  margin-top: 680px;
+  margin-top: 620px;
 }
 
 /*    section_01
 ------------------------------------*/
 .section_01 {
-  padding: 65px 0 105px;
+  background: #f8f9fa;
+  padding: 70px 0 105px;
   position: relative;
+  overflow: hidden;
 }
 
 .section_01 .container {
+  max-width: 1043px;
+  padding: 0 20px;
   position: relative;
   z-index: 9;
 }
@@ -366,14 +423,43 @@ button:focus, input:focus, a:focus {
 }
 
 .section_01 .paralax1 {
-  z-index: -1;
-  background: url("../images/bg_scroll.png") no-repeat top center;
+  background: url("../images/bg_paralax1.jpg") no-repeat;
   position: absolute;
   top: -50px;
   left: 0;
+  height: 200px;
+  z-index: 1;
+  width: 202px;
+}
+
+.section_01 .paralax2 {
+  background: url("../images/bg_paralax2.jpg") no-repeat;
+  position: absolute;
+  top: -200px;
   right: 0;
-  height: 603px;
-  z-index: -1;
+  height: 292px;
+  z-index: 1;
+  width: 236px;
+}
+
+.section_01 .paralax3 {
+  background: url("../images/bg_paralax3.jpg") no-repeat;
+  position: absolute;
+  bottom: 150px;
+  right: 0;
+  height: 302px;
+  z-index: 1;
+  width: 144px;
+}
+
+.section_01 .paralax4 {
+  background: url("../images/bg_paralax4.jpg") no-repeat;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 202px;
+  z-index: 1;
+  width: 249px;
 }
 
 .section_01 .items {
@@ -400,7 +486,7 @@ button:focus, input:focus, a:focus {
 }
 
 .section_01 .listItems ul {
-  line-height: 1.5;
+  line-height: 1.8;
   padding: 25px 0;
 }
 
@@ -428,12 +514,21 @@ button:focus, input:focus, a:focus {
   padding-top: 25px;
 }
 
+.section_01 .space {
+  display: inline-block;
+}
+
 /*    section_02
 ------------------------------------*/
 .section_02 {
   padding-top: 70px;
   background: url("../images/bg_02.jpg") #383b41 no-repeat center bottom;
   background-size: cover;
+}
+
+.section_02 .container {
+  max-width: 1043px;
+  padding: 0 20px;
 }
 
 .section_02 .description {
@@ -450,10 +545,9 @@ button:focus, input:focus, a:focus {
 }
 
 .section_02 .text {
-  line-height: 2;
+  line-height: 2.5;
   font-size: 16px;
   color: #ffffff;
-  max-width: 788px;
   margin: auto;
   margin-bottom: 40px;
 }
@@ -488,13 +582,19 @@ button:focus, input:focus, a:focus {
   font-weight: bold;
   padding-top: 25px;
   color: #383b41;
+  margin-right: 20px;
 }
 
 /*    section_04
 ------------------------------------*/
 .section_04 {
   background: #383b41;
-  padding: 75px 0 95px;
+  padding: 70px 0 95px;
+}
+
+.section_04 .container {
+  max-width: 1043px;
+  padding: 0 20px;
 }
 
 .section_04 .title_h2 {
@@ -513,7 +613,7 @@ button:focus, input:focus, a:focus {
 }
 
 .section_04 .listItems .items {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding: 30px;
   color: #383b41;
   text-align: center;
@@ -532,8 +632,43 @@ button:focus, input:focus, a:focus {
   margin: auto;
 }
 
-/*    main_visual
-------------------------------------*/
+.section_04 .btn a {
+  background: #fab32b;
+  max-width: 330px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section_04 .btn a:before {
+  content: "";
+  border-radius: 50px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  background: #ffca00;
+}
+
+.section_04 .btn a:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 83px;
+  z-index: 9;
+  background: url("../images/icon_btn.png") no-repeat;
+  width: 18px;
+  height: 15px;
+}
+
 /*======================================
         Footer
 ======================================*/
@@ -561,7 +696,7 @@ button:focus, input:focus, a:focus {
 }
 
 .footer .copyright {
-  background: #f9c14a;
+  background: #ffca00;
   text-align: center;
   padding: 30px 0;
 }
@@ -605,6 +740,47 @@ button:focus, input:focus, a:focus {
   border: 0 !important;
 }
 
+.white {
+  color: #ffffff !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+/*-----------------------
+        Responsive for device < 1160px
+-----------------------------------------*/
+@media screen and (max-width: 1160px) {
+  .main_visual {
+    background-size: cover !important;
+  }
+  .main_visual .container {
+    padding: 0;
+  }
+  .main_visual .title_h2 {
+    margin-left: 5%;
+  }
+}
+
+/*-----------------------
+        Responsive for device < 1020px
+-----------------------------------------*/
+@media screen and (max-width: 1020px) {
+  .header .logo {
+    width: 25%;
+  }
+  .header .nav {
+    width: 75%;
+  }
+  .header .nav_list li {
+    padding-right: 0 !important;
+  }
+  .header .nav_list li:not(:first-child) {
+    padding-left: 3%;
+  }
+}
+
 /*-----------------------
         Responsive for device < 767px
 -----------------------------------------*/
@@ -618,6 +794,9 @@ button:focus, input:focus, a:focus {
   .container {
     padding-left: 4.7%;
     padding-right: 4.7%;
+  }
+  br {
+    display: none;
   }
   /*------------------- Typography_SP -------------------*/
   .header .logo {
@@ -639,17 +818,25 @@ button:focus, input:focus, a:focus {
     display: none;
   }
   .main_visual {
-    height: 635px;
-    background: url("../images/main_sp.jpg") no-repeat bottom center;
+    height: 520px;
+    background: url("../images/bg_main_sp.jpg") no-repeat bottom center;
+  }
+  .main_visual .main_visual_in {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    margin-right: 0;
+    background: none;
+    height: 520px;
+    background: url("../images/main_visual-img_sp.png") no-repeat right bottom;
+    background-size: contain;
   }
   .main_visual .title_h2 {
-    margin-top: 20%;
+    margin-left: 0;
+    margin-top: 30%;
   }
   .main {
-    margin-top: 635px;
+    margin-top: 520px;
   }
   .section_01 {
     padding: 0;
@@ -659,14 +846,40 @@ button:focus, input:focus, a:focus {
     background: rgba(255, 255, 255, 0.6);
   }
   .section_01 .paralax1 {
-    z-index: -1;
-    background: url("../images/bg_sp.png") no-repeat left top;
+    background: url("../images/bg_paralax1.jpg") no-repeat;
+    background-size: contain;
     position: absolute;
-    top: 0px;
+    top: -50px;
     left: 0;
+    z-index: 1;
+    width: 100px;
+  }
+  .section_01 .paralax2 {
+    background: url("../images/bg_paralax2.jpg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -200px;
     right: 0;
-    background-size: 100%;
-    z-index: -1;
+    z-index: 1;
+    width: 150px;
+  }
+  .section_01 .paralax3 {
+    background: url("../images/bg_paralax3.jpg") no-repeat;
+    position: absolute;
+    background-size: contain;
+    bottom: 150px;
+    right: 0;
+    z-index: 1;
+    width: 90px;
+  }
+  .section_01 .paralax4 {
+    background: url("../images/bg_paralax4.jpg") no-repeat;
+    position: absolute;
+    background-size: contain;
+    bottom: -60px;
+    left: 0;
+    z-index: 1;
+    width: 150px;
   }
   .section_01 .listItems .items {
     width: 100%;
@@ -676,6 +889,9 @@ button:focus, input:focus, a:focus {
   }
   .section_01 .listItems .items:nth-child(even) {
     padding-left: 0;
+  }
+  .section_01 .space {
+    display: none;
   }
   .section_01 .avatar {
     padding-top: 20px !important;
@@ -767,6 +983,9 @@ button:focus, input:focus, a:focus {
     width: 100%;
     padding-bottom: 10px;
   }
+  .section_03 .img_banner .items:last-child .text {
+    margin-top: 0;
+  }
   .section_03 .img_banner img {
     width: 40%;
   }
@@ -774,9 +993,8 @@ button:focus, input:focus, a:focus {
     text-align: left;
     width: 50%;
     padding-top: 0;
-  }
-  .section_03 .img_banner .text:not(:last-child) {
-    margin-top: -8%;
+    margin-right: 0;
+    margin-top: -5.3%;
   }
   .section_04 {
     padding: 40px 0 70px;
@@ -787,6 +1005,13 @@ button:focus, input:focus, a:focus {
   .section_04 .listItems .items {
     width: 100%;
     margin-bottom: 15px;
+  }
+  .section_04 .btn {
+    padding-top: 20px;
+    margin: auto;
+  }
+  .section_04 .btn a:after {
+    right: 20%;
   }
   .footer {
     padding-top: 42px;

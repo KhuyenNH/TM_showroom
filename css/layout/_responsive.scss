@@ -1,4 +1,39 @@
 /*-----------------------
+        Responsive for device < 1160px
+-----------------------------------------*/
+@media screen and (max-width: 1160px) {
+    .main_visual {
+        background-size: cover!important;
+        .container {
+            padding: 0;
+        }
+        .title_h2 {
+            margin-left: 5%;
+        }
+    }
+}
+/*-----------------------
+        Responsive for device < 1020px
+-----------------------------------------*/
+@media screen and (max-width: 1020px) {
+    .header {
+        .logo {
+            width: 25%;
+        }
+        .nav {
+            width: 75%;
+        }
+        .nav_list {
+            li {
+                padding-right: 0!important;
+                &:not(:first-child) {
+                    padding-left: 3%;
+                }
+            }
+        }
+    }
+}
+/*-----------------------
         Responsive for device < 767px
 -----------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -11,6 +46,9 @@
     .container {
         padding-left: 4.7%;
         padding-right: 4.7%;
+    }
+    br {
+        display: none;
     }
     /*------------------- Typography_SP -------------------*/
     .title_h2 {
@@ -73,16 +111,25 @@
         }
     }
     .main_visual {
-        height: 635px;
-        background: url('../images/main_sp.jpg') no-repeat bottom center;
-        align-items: flex-start;
+        height: 520px;
+        background: url('../images/bg_main_sp.jpg') no-repeat bottom center;
+        .main_visual_in {
+            align-items: flex-start;
+            margin-right: 0;
+            background: none;
+            height: 520px;
+            background: url('../images/main_visual-img_sp.png') no-repeat right bottom;
+            background-size: contain;
+        }
         .title_h2 {
-            margin-top: 20%;
+            margin-left: 0;
+            margin-top: 30%;
             // width: 60%;
         }
     }
     .main {
-        margin-top: 635px;
+        // margin-top: 635px;
+        margin-top: 520px;
     }
     .section_01 {
         padding: 0;
@@ -91,14 +138,40 @@
             background: rgba(255, 255, 255, 0.6);
         }
         .paralax1 {
-            z-index: -1;
-            background: url('../images/bg_sp.png') no-repeat left top;
+            background: url('../images/bg_paralax1.jpg') no-repeat;
+            background-size: contain;
             position: absolute;
-            top: 0px;
+            top: -50px;
             left: 0;
+            z-index: 1;
+            width: 100px;
+        }
+        .paralax2 {
+            background: url('../images/bg_paralax2.jpg') no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -200px;
             right: 0;
-            background-size: 100%;
-            z-index: -1;
+            z-index: 1;
+            width: 150px;
+        }
+        .paralax3 {
+            background: url('../images/bg_paralax3.jpg') no-repeat;
+            position: absolute;
+            background-size: contain;
+            bottom: 150px;
+            right: 0;
+            z-index: 1;
+            width: 90px;
+        }
+        .paralax4 {
+            background: url('../images/bg_paralax4.jpg') no-repeat;
+            position: absolute;
+            background-size: contain;
+            bottom: -60px;
+            left: 0;
+            z-index: 1;
+            width: 150px;
         }
         .listItems {
             .items {
@@ -110,6 +183,9 @@
                     padding-left: 0;
                 }
             }
+        }
+        .space {
+            display: none;
         }
         .avatar {
             padding-top: 20px !important;
@@ -160,6 +236,11 @@
                 flex-wrap: wrap;
                 width: 100%;
                 padding-bottom: 10px;
+                &:last-child {
+                    .text {
+                        margin-top: 0;
+                    }
+                }
             }
             img {
                 width: 40%;
@@ -168,9 +249,8 @@
                 text-align: left;
                 width: 50%;
                 padding-top: 0;
-                &:not(:last-child) {
-                    margin-top: -8%;
-                }
+                margin-right: 0;
+                margin-top: -5.3%;
             }
         }
     }
@@ -183,6 +263,15 @@
             .items {
                 width: 100%;
                 margin-bottom: 15px;
+            }
+        }
+        .btn {
+            padding-top: 20px;
+            margin: auto;
+            a {
+                &:after {
+                    right: 20%;
+                }
             }
         }
     }

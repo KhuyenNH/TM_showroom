@@ -18,8 +18,23 @@
 // /*------------------- Typography -------------------*/
 .title_h2 {
     text-align: center;
+    .tit_txt {
+        text-align: center;
+        font-size: 4rem;
+        color: #383b41;
+        font-weight: bold;
+        margin-top: -18px;
+    }
 }
 .title_h3 {
+    position: relative;
+    .tit_txt {
+        line-height: 1.3;
+        font-size: 4rem;
+        color: #383b41;
+        font-weight: bold;
+        margin-top: 12px;
+    }
     // font-size: 24px;
     // line-height: 1.8;
     // color: $color-primary;
@@ -38,7 +53,7 @@
     // font-weight: bold;
 }
 .text {
-    line-height: 1.5;
+    line-height: 1.8;
     // padding:
     // font-size: ;
     // color:

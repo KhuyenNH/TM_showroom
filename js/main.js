@@ -11,11 +11,22 @@ if (wBrowser < 768) {
     });
 }
 
-var h_section01 = $('.section_01').height();
+var h_section01 = $('.section_01').outerHeight(true);
 $('.paralax1').height(h_section01);
 
-var heightHead = $('.header').outerHeight();
+var heightHead = $('.header').outerHeight(true);
 $('.page-body').css("padding-top", heightHead);
+$('.main_visual').css("top", heightHead);
+
+/* Scrool bookmark
+-------------------------------------- */
+$('a[href^="#"]').click(function() {
+    var the_id = $(this).attr("href");
+    $('html, body').animate({
+        scrollTop: $(the_id).offset().top - heightHead
+    }, 1000);
+    return false;
+});
 
 /* Reponsive for meta
 -------------------------------------- */
@@ -32,12 +43,20 @@ $(window).resize(function() {
 window.onload = function() {
     $(window).scroll(function() {
         $('.fadeUp, .fadeLeft, .fadeIn').each(function() {
-            let elemPos = $(this).offset().top;
-            let scroll = $(window).scrollTop();
-            let windowHeight = $(window).height();
-            if (scroll > elemPos - windowHeight + posScroll) {
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 0) {
                 $(this).addClass('ef-slide');
             }
         });
+
+        var posThis = $(this).scrollTop();
+        if (posThis > 800) {
+            $('.main_visual').addClass('removeBg');
+        } else {
+            $('.main_visual').removeClass('removeBg');
+        }
+
     }).trigger("scroll");
 }
