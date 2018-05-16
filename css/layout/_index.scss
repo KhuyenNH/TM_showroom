@@ -139,7 +139,7 @@
 .section_02 {
     padding-top: 70px;
     background: url('../images/bg_02.jpg') #383b41 no-repeat center bottom;
-    background-size: cover;
+    background-size: 100%;
     .container {
         max-width: 1043px;
         padding: 0 20px;
@@ -169,6 +169,10 @@
 .section_03 {
     background: #ffca00;
     padding: 70px 0 120px;
+    .container {
+        max-width: 1043px;
+        padding: 0px 20px;
+    }
     .title_h2 {
         padding-bottom: 80px;
     }
@@ -208,16 +212,17 @@
         flex-wrap: wrap;
         .items {
             margin-bottom: 24px;
-            padding: 30px;
+            padding: 25px 30px 30px 30px;
             color: #383b41;
             text-align: center;
             width: calc(50% - 12px);
             background: $color-a;
         }
         .title_h3 {
+            line-height: 1.5;
             font-size: 2.2rem;
             font-weight: bold;
-            padding-bottom: 20px;
+            padding-bottom: 18px;
         }
     }
     .btn {

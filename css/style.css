@@ -528,7 +528,7 @@ button:focus, input:focus, a:focus {
 .section_02 {
   padding-top: 70px;
   background: url("../images/bg_02.jpg") #383b41 no-repeat center bottom;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .section_02 .container {
@@ -563,6 +563,11 @@ button:focus, input:focus, a:focus {
 .section_03 {
   background: #ffca00;
   padding: 70px 0 120px;
+}
+
+.section_03 .container {
+  max-width: 1043px;
+  padding: 0px 20px;
 }
 
 .section_03 .title_h2 {
@@ -620,7 +625,7 @@ button:focus, input:focus, a:focus {
 
 .section_04 .listItems .items {
   margin-bottom: 24px;
-  padding: 30px;
+  padding: 25px 30px 30px 30px;
   color: #383b41;
   text-align: center;
   width: calc(50% - 12px);
@@ -628,9 +633,10 @@ button:focus, input:focus, a:focus {
 }
 
 .section_04 .listItems .title_h3 {
+  line-height: 1.5;
   font-size: 2.2rem;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .section_04 .btn {
@@ -856,13 +862,13 @@ button:focus, input:focus, a:focus {
   }
   .section_01 .bg_wrap {
     padding: 30px 3.1% 80px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(248, 249, 250, 0.6);
   }
   .section_01 .paralax1 {
     background: url("../images/bg_paralax1.jpg") no-repeat;
     background-size: contain;
     position: absolute;
-    top: -50px;
+    top: 15px;
     left: 0;
     z-index: 1;
     width: 100px;
@@ -871,7 +877,7 @@ button:focus, input:focus, a:focus {
     background: url("../images/bg_paralax2.jpg") no-repeat;
     background-size: contain;
     position: absolute;
-    top: -200px;
+    top: 10px;
     right: 0;
     z-index: 1;
     width: 150px;
@@ -889,7 +895,7 @@ button:focus, input:focus, a:focus {
     background: url("../images/bg_paralax4.jpg") no-repeat;
     position: absolute;
     background-size: contain;
-    bottom: -60px;
+    bottom: -100px;
     left: 0;
     z-index: 1;
     width: 150px;
@@ -1000,6 +1006,9 @@ button:focus, input:focus, a:focus {
     width: 100%;
     padding-bottom: 10px;
   }
+  .section_03 .img_banner .items:not(:first-child) {
+    padding-left: 0;
+  }
   .section_03 .img_banner .items:last-child .text {
     margin-top: 0;
   }
@@ -1018,6 +1027,12 @@ button:focus, input:focus, a:focus {
   }
   .section_04 .title_h2 {
     padding-bottom: 45px;
+  }
+  .section_04 .listItems .title_h3 {
+    font-size: 2rem;
+  }
+  .section_04 .listItems .text {
+    font-size: 1.4rem;
   }
   .section_04 .listItems .items {
     width: 100%;

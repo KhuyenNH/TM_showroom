@@ -11,6 +11,21 @@ if (wBrowser < 768) {
     });
 }
 
+$(window).on('resize', function() {
+    var win = $(this);
+    if (win.width() < 768) {
+        var posScroll = 0;
+        $('img').each(function() {
+            $(this).attr("src", $(this).attr("src").replace('_pc', '_sp'));
+        });
+    } else {
+        var posScroll = 100;
+        $('img').each(function() {
+            $(this).attr("src", $(this).attr("src").replace('_sp', '_pc'));
+        });
+    }
+});
+
 var h_section01 = $('.section_01').outerHeight(true);
 $('.paralax1').height(h_section01);
 
