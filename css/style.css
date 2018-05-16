@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .row_clear:after {
   content: "";
   clear: both;
@@ -57,12 +58,16 @@ article, aside, details, figure, footer, header, menu, nav, section, summary {
   display: block;
 }
 
+body {
+  font-family: Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans Japanese", sans-serif;
   color: #000;
   font-size: 1.4rem;
 }
@@ -425,7 +430,7 @@ button:focus, input:focus, a:focus {
 .section_01 .paralax1 {
   background: url("../images/bg_paralax1.jpg") no-repeat;
   position: absolute;
-  top: -50px;
+  top: 30px;
   left: 0;
   height: 200px;
   z-index: 1;
@@ -435,7 +440,7 @@ button:focus, input:focus, a:focus {
 .section_01 .paralax2 {
   background: url("../images/bg_paralax2.jpg") no-repeat;
   position: absolute;
-  top: -200px;
+  top: 20px;
   right: 0;
   height: 292px;
   z-index: 1;
@@ -540,6 +545,7 @@ button:focus, input:focus, a:focus {
 }
 
 .section_02 .note_right span {
+  font-size: 2rem;
   display: block;
   padding-top: 15px;
 }
@@ -795,10 +801,17 @@ button:focus, input:focus, a:focus {
     padding-left: 4.7%;
     padding-right: 4.7%;
   }
-  br {
-    display: none;
-  }
   /*------------------- Typography_SP -------------------*/
+  .title_h2 .tit_txt {
+    font-size: 3rem;
+  }
+  .title_h3 .tit_txt {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
   .header .logo {
     width: 50%;
     text-align: center;
@@ -911,7 +924,11 @@ button:focus, input:focus, a:focus {
     padding: 50px 0 40px;
   }
   .section_02 .text {
+    font-size: 1.5rem;
     margin-bottom: 20px;
+  }
+  .section_02 .note_right span {
+    font-size: 1.7rem;
   }
   .section_03 {
     padding: 30px 0 35px;

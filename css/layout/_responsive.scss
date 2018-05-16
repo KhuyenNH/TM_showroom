@@ -47,17 +47,21 @@
         padding-left: 4.7%;
         padding-right: 4.7%;
     }
-    br {
-        display: none;
-    }
     /*------------------- Typography_SP -------------------*/
     .title_h2 {
         // font-size: 24px;
         // color: $color-primary;
         // line-height: 1.8;
         // font-weight: bold;
+        .tit_txt {
+            font-size: 3rem;
+        }
     }
     .title_h3 {
+        .tit_txt {
+            font-size: 3rem;
+            line-height: 1.5;
+        }
         // font-size: 24px;
         // line-height: 1.8;
         // color: $color-primary;
@@ -71,7 +75,7 @@
     }
     .text {
         // padding:
-        // font-size: ;
+        font-size: 1.5rem;
         // color:
     }
     .header {
@@ -202,7 +206,13 @@
             padding: 50px 0 40px;
         }
         .text {
+            font-size: 1.5rem;
             margin-bottom: 20px;
+        }
+        .note_right {
+            span {
+                font-size: 1.7rem;
+            }
         }
     }
     .section_03 {

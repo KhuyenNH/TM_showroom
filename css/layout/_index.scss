@@ -59,7 +59,7 @@
     .paralax1 {
         background: url('../images/bg_paralax1.jpg') no-repeat;
         position: absolute;
-        top: -50px;
+        top: 30px;
         left: 0;
         height: 200px;
         z-index: 1;
@@ -68,7 +68,7 @@
     .paralax2 {
         background: url('../images/bg_paralax2.jpg') no-repeat;
         position: absolute;
-        top: -200px;
+        top: 20px;
         right: 0;
         height: 292px;
         z-index: 1;
@@ -150,6 +150,7 @@
     .note_right {
         text-align: right;
         span {
+            font-size: 2rem;
             display: block;
             padding-top: 15px;
         }
