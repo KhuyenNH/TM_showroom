@@ -5,15 +5,86 @@
 ------------------------------------*/
 .main_visual {
     position: fixed;
-    // top: 0;
+    top: 0;
     left: 0;
     right: 0;
+    // height: 100%;
     background: url('../images/bg_main.jpg') no-repeat left center;
     background-size: cover;
     .main_visual_wrap {
-        background: url('../images/main_visual-img_2.png') no-repeat 190px 100%;
+        position: relative;
+    }
+    .bg_main-shadow2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../images/main_visual-img_2.png') no-repeat;
+        animation: shadowBg infinite 2.5s;
+        // animation-delay: 1s;
+        animation-duration: 10s;
+        -moz-animation: shadowBg infinite 2.5s;
+        // -moz-animation-delay: 1s;
+        -moz-animation-duration: 10s;
+        -ms-animation: shadowBg infinite 2.5s;
+        // -ms-animation-delay: 1s;
+        -ms-animation-duration: 10s;
+    }
+    .bg_main-shadow3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../images/main_visual-img_3.png') no-repeat;
+        animation: shadowBg infinite 5s;
+        // animation-delay: 2.5s;
+        animation-duration: 2500ms;
+        -moz-animation: shadowBg infinite 5s;
+        // -moz-animation-delay: 2.5s;
+        -moz-animation-duration: 2500ms;
+        -ms-animation: shadowBg infinite 5s;
+        // -ms-animation-delay: 2.5s;
+        -ms-animation-duration: 2500ms;
+    }
+    .bg_main-shadow4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../images/main_visual-img_4.png') no-repeat;
+        animation: shadowBg infinite 7.5s;
+        // animation-delay: 5s;
+        animation-duration: 2500ms;
+        -moz-animation: shadowBg infinite 7.5s;
+        // -moz-animation-delay: 5s;
+        -moz-animation-duration: 2500ms;
+        -ms-animation: shadowBg infinite 7.5s;
+        // -ms-animation-delay: 5s;
+        -ms-animation-duration: 2500ms;
+    }
+    .bg_main-shadow5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../images/main_visual-img_5.png') no-repeat;
+        animation: shadowBg infinite 10s;
+        // animation-delay: 7.5s;
+        animation-duration: 2500ms;
+        -moz-animation: shadowBg infinite 10s;
+        // -moz-animation-delay: 7.5s;
+        -moz-animation-duration: 2500ms;
+        -ms-animation: shadowBg infinite 10s;
+        // -ms-animation-delay: 7.5s;
+        -ms-animation-duration: 2500ms;
     }
     .main_visual_in {
+        position: relative;
+        z-index: 9;
         display: flex;
         align-items: center;
         justify-content: flex-start;

@@ -34,3 +34,145 @@
 .mr0 {
     margin-right: 0!important;
 }
+
+// @keyframes shadowBg {
+//     0% {
+//         background: url('../images/main_visual-img_2_sp.png') no-repeat -50% 100%;
+//     }
+//     20% {
+//         background: url('../images/main_visual-img_2_sp.png') no-repeat -10% 100%;
+//     }
+//     40% {
+//         background: url('../images/main_visual-img_2_sp.png') no-repeat 20% 100%;
+//     }
+//     100% {
+//         background: url('../images/main_visual-img_2_sp.png') no-repeat 100% 100%;
+//     }
+// }
+@keyframes shadowBg {
+    0% {
+        background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
+    }
+    12% {
+        background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+    }
+    25% {
+        background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
+    }
+
+    26% {
+        background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
+    }
+    37% {
+        background: url('../images/main_visual-img_3.png') no-repeat 55% 100%;
+    }
+    50% {
+        background: url('../images/main_visual-img_3.png') no-repeat -400% 100%;
+    }
+
+    51% {
+        background: url('../images/main_visual-img_4.png') no-repeat 400% 100%;
+    }
+    63% {
+        background: url('../images/main_visual-img_4.png') no-repeat 55% 100%;
+    }
+    75% {
+        background: url('../images/main_visual-img_4.png') no-repeat -400% 100%;
+    }
+
+    56% {
+        background: url('../images/main_visual-img_5.png') no-repeat 400% 100%;
+    }
+    87% {
+        background: url('../images/main_visual-img_5.png') no-repeat 55% 100%;
+    }
+    100% {
+        background: url('../images/main_visual-img_5.png') no-repeat -400% 100%;
+    }
+
+}
+// @-moz-keyframes shadowBg {
+//     0% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
+//     }
+//     50% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     60% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     70% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     100% {
+//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
+//     }
+// }
+// @-webkit-keyframes shadowBg {
+//     0% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
+//     }
+//     50% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     60% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     70% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     100% {
+//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
+//     }
+// }
+// @-o-keyframes shadowBg {
+//     0% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
+//     }
+//     50% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     60% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     70% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     100% {
+//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
+//     }
+// }
+// @-ms-keyframes shadowBg {
+//     0% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
+//     }
+//     50% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     60% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     70% {
+//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
+//     }
+//     100% {
+//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
+//     }
+// }
+@keyframes shadowBgSp {
+    0% {
+        left: 200%;
+    }
+    50% {
+        left: 0%;
+    }
+    60% {
+        left: 0%;
+    }
+    70% {
+        left: 0%;
+    }
+    100% {
+        left: -200%;
+    }
+}

@@ -4,6 +4,16 @@ if (wBrowser < 768) {
     $('img').each(function() {
         $(this).attr("src", $(this).attr("src").replace('_pc', '_sp'));
     });
+    $(window).on("deviceorientation", function( event ) {
+		if (window.matchMedia("(orientation: portrait)").matches) {
+            $('.bg_main-shadow2, .main_visual_in').css('background-size', wBrowser +"px");
+		}
+		if (window.matchMedia("(orientation: landscape)").matches) {
+            $('.bg_main-shadow2, .main_visual_in').css('background-size', 320 +"px");
+		}
+   });
+
+
 } else {
     var posScroll = 100;
     $('img').each(function() {
@@ -53,6 +63,10 @@ $(window).resize(function() {
     }
 }).resize();
 
+
+setTimeout(function () {
+    $('.fadeUpTit').addClass('ef-slide');
+}, 500);
 /* Fade scroll
 -------------------------------------- */
 window.onload = function() {
@@ -67,7 +81,7 @@ window.onload = function() {
         });
 
         var posThis = $(this).scrollTop();
-        if (posThis > 800) {
+        if (posThis > 2000) {
             $('.main_visual').addClass('removeBg');
         } else {
             $('.main_visual').removeClass('removeBg');
