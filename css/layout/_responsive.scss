@@ -1,4 +1,23 @@
 /*-----------------------
+        Responsive for device < 1300px
+-----------------------------------------*/
+@media screen and (max-width: 1300px) {
+    .section_01 {
+        .paralax1 {
+            left: 70%;
+        }
+        .paralax2 {
+            right: 70%;
+        }
+        .paralax3 {
+            right: 70%;
+        }
+        .paralax4 {
+            left: 70%;
+        }
+    }
+}
+/*-----------------------
         Responsive for device < 1160px
 -----------------------------------------*/
 @media screen and (max-width: 1160px) {
@@ -44,64 +63,44 @@
         display: inherit;
     }
     .container {
-        padding-left: 4.7%;
-        padding-right: 4.7%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .p_sp {
+        width: 270px;
     }
     /*------------------- Typography_SP -------------------*/
     .title_h2 {
-        // font-size: 24px;
-        // color: $color-primary;
-        // line-height: 1.8;
-        // font-weight: bold;
+        width: 270px;
+        margin: auto;
         .tit_txt {
-            font-size: 3rem;
+            font-size: 2rem;
+            margin-top: -8px;
         }
     }
     .title_h3 {
         .tit_txt {
-            font-size: 3rem;
+            font-size: 2.3rem;
             line-height: 1.5;
         }
-        // font-size: 24px;
-        // line-height: 1.8;
-        // color: $color-primary;
-        // font-weight: bold;
-    }
-    .title_h4 {
-        // font-size: 24px;
-        // color: $color-primary;
-        // line-height: 1.8;
-        // font-weight: bold;
     }
     .text {
-        // padding:
-        font-size: 1.5rem;
-        // color:
+        font-size: 1.2rem;
     }
     .header {
+        justify-content: space-between;
         .logo {
-            width: 50%;
+            width: 147px;
             text-align: center;
-
-            // display: flex;
-            // flex-wrap: wrap;
-            // justify-content: space-between;
-            // align-items: center;
         }
-        .logo_in {
-            // width: 50%;
-        }
-        // .toggle_nav {
-        //     width: 25%;
-        // }
         .nav {
-            width: 50%;
+            width: 40%;
         }
         .nav_list {
             li {
                 font-size: 1.8rem;
                 text-align: right;
-                width: 50%;
+                width: 70px;
                 &:not(:first-child) {
                     padding-left: 0;
                 }
@@ -115,49 +114,64 @@
         }
     }
     .main_visual {
-        height: 520px;
+        height: 527px;
         background: url('../images/bg_main_sp.jpg') no-repeat bottom center;
+        .main_visual_wrap {
+            background: url('../images/main_visual-img_2_sp.png') no-repeat 32% 100%;
+            background-size: contain;
+        }
         .main_visual_in {
             align-items: flex-start;
             margin-right: 0;
             background: none;
-            height: 520px;
-            background: url('../images/main_visual-img_sp.png') no-repeat right bottom;
+            height: 527px;
+            background: url('../images/main_visual-img_1_sp.png') no-repeat right bottom;
             background-size: contain;
         }
         .title_h2 {
-            margin-left: 0;
             margin-top: 30%;
+            margin-left: auto;
+            margin-right: auto;
             // width: 60%;
         }
     }
     .main {
         // margin-top: 635px;
-        margin-top: 520px;
+        margin-top: 527px;
     }
     .section_01 {
-        padding: 0;
+        padding: 14px 0 60px;
+        padding-bottom: 60px;
+        .container {
+            padding: 0 15px;
+        }
+        .text_tit {
+            font-size: 1.1rem;
+            padding: 20px 0 22px;
+        }
         .bg_wrap {
-            padding: 30px 3.1% 80px;
+            padding: 19px 10px 25px;
             background: rgba(248, 249, 250, 0.6);
         }
         .paralax1 {
+            margin-left: 0;
             background: url('../images/bg_paralax1.jpg') no-repeat;
             background-size: contain;
             position: absolute;
             top: 15px;
             left: 0;
             z-index: 1;
-            width: 100px;
+            width: 101px;
         }
         .paralax2 {
             background: url('../images/bg_paralax2.jpg') no-repeat;
             background-size: contain;
             position: absolute;
-            top: 10px;
+            top: 0px;
             right: 0;
             z-index: 1;
-            width: 150px;
+            width: 118px;
+            margin-right: 0;
         }
         .paralax3 {
             background: url('../images/bg_paralax3.jpg') no-repeat;
@@ -166,18 +180,26 @@
             bottom: 150px;
             right: 0;
             z-index: 1;
-            width: 90px;
+            width: 72px;
+            margin-right: 0;
         }
         .paralax4 {
-            background: url('../images/bg_paralax4.jpg') no-repeat;
+            background: url('../images/bg_paralax4_sp.png') no-repeat;
             position: absolute;
             background-size: contain;
-            bottom: -100px;
+            bottom: -200px;
             left: 0;
             z-index: 1;
-            width: 150px;
+            width: 152px;
+            margin-left: 0;
         }
         .listItems {
+            .title_h3 {
+                padding-bottom: 18px;
+            }
+            ul {
+                padding: 28px 0;
+            }
             .items {
                 width: 100%;
                 &:nth-child(odd) {
@@ -192,26 +214,38 @@
             display: none;
         }
         .avatar {
-            padding-top: 20px !important;
+            padding-top: 30px !important;
             text-align: center;
         }
         .listItem_02 {
             padding-top: 60px;
             flex-direction: column-reverse;
         }
+        .note {
+            li {
+                text-indent: -12px;
+                padding-left: 11px;
+            }
+        }
     }
     .section_02 {
         padding-top: 35px;
+        background-image: url('../images/bg_02_sp.jpg');
         .description {
-            padding: 50px 0 40px;
+            padding: 50px 0 25px;
         }
         .text {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 20px;
         }
         .note_right {
+            .text {
+                line-height: 1.7;
+                font-size: 1rem;
+            }
             span {
-                font-size: 1.7rem;
+                padding-top: 8px;
+                font-size: 1.3rem;
             }
         }
     }
@@ -256,40 +290,52 @@
                 }
             }
             img {
-                width: 40%;
+                // width: 101px;
+                width: 38.6%;
             }
             .text {
                 text-align: left;
                 width: 50%;
+                // width: 50%;
                 padding-top: 0;
                 margin-right: 0;
                 margin-top: -5.3%;
+                font-size: 1.4rem;
             }
         }
     }
     .section_04 {
-        padding: 40px 0 70px;
+        padding: 40px 0 55px;
         .title_h2 {
             padding-bottom: 45px;
         }
         .listItems {
             .title_h3 {
-                font-size: 2rem;
+                font-size: 1.5rem;
+                padding-bottom: 12px;
             }
             .text {
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
             .items {
                 width: 100%;
                 margin-bottom: 15px;
+                padding: 14px;
             }
         }
         .btn {
-            padding-top: 20px;
+            max-width: 165px;
+            padding-top: 10px;
             margin: auto;
             a {
+                padding: 9px;
+                font-size: 1rem;
                 &:after {
+                    top: calc(50% - 4px);
                     right: 20%;
+                    width: 9px;
+                    height: 7px;
+                    background-size: contain;
                 }
             }
         }
@@ -297,11 +343,15 @@
     .footer {
         padding-top: 42px;
         .social {
-            padding: 30px 0 40px;
+            padding: 25px 0 40px;
             a {
                 margin: 0 15px;
-                width: 15%;
+                width: 40px;
             }
+        }
+        .copyright {
+            padding: 14px 0;
+            font-size: .9rem;
         }
     }
 }

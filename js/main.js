@@ -26,8 +26,8 @@ $(window).on('resize', function() {
     }
 });
 
-var h_section01 = $('.section_01').outerHeight(true);
-$('.paralax1').height(h_section01);
+// var h_section01 = $('.section_01').outerHeight(true);
+// $('.paralax1').height(h_section01);
 
 var heightHead = $('.header').outerHeight(true);
 $('.page-body').css("padding-top", heightHead);

@@ -346,10 +346,6 @@ button:focus, input:focus, a:focus {
   padding-right: 62px;
 }
 
-.header .nav_list li:nth-child(4) {
-  padding-right: 45px;
-}
-
 .header .nav_list li a {
   display: block;
 }
@@ -368,6 +364,10 @@ button:focus, input:focus, a:focus {
   background-size: cover;
 }
 
+.main_visual .main_visual_wrap {
+  background: url("../images/main_visual-img_2.png") no-repeat 190px 100%;
+}
+
 .main_visual .main_visual_in {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,7 +380,7 @@ button:focus, input:focus, a:focus {
   justify-content: flex-start;
   height: 620px;
   margin-right: -140px;
-  background: url("../images/main_visual-img.png") no-repeat right bottom;
+  background: url("../images/main_visual-img_1.png") no-repeat right bottom;
 }
 
 .main_visual .title_h2 {
@@ -427,44 +427,53 @@ button:focus, input:focus, a:focus {
   color: #383b41;
 }
 
+.section_01 .paralax_wrap {
+  padding: 0 20px;
+  position: relative;
+}
+
 .section_01 .paralax1 {
-  background: url("../images/bg_paralax1.jpg") no-repeat;
+  background: url("../images/bg_paralax1.png") no-repeat;
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: -50px;
+  left: 50%;
+  margin-left: -750px;
   height: 200px;
   z-index: 1;
-  width: 202px;
+  width: 312px;
 }
 
 .section_01 .paralax2 {
-  background: url("../images/bg_paralax2.jpg") no-repeat;
+  background: url("../images/bg_paralax2.png") no-repeat;
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: -50px;
+  right: 50%;
+  margin-right: -720px;
   height: 292px;
   z-index: 1;
-  width: 236px;
+  width: 318px;
 }
 
 .section_01 .paralax3 {
-  background: url("../images/bg_paralax3.jpg") no-repeat;
+  background: url("../images/bg_paralax3.png") no-repeat;
   position: absolute;
   bottom: 150px;
-  right: 0;
+  right: 50%;
+  margin-right: -820px;
   height: 302px;
   z-index: 1;
-  width: 144px;
+  width: 280px;
 }
 
 .section_01 .paralax4 {
-  background: url("../images/bg_paralax4.jpg") no-repeat;
+  background: url("../images/bg_paralax4.png") no-repeat;
   position: absolute;
-  bottom: 0px;
-  left: 0;
-  height: 202px;
+  bottom: -125px;
+  left: 50%;
+  margin-left: -750px;
+  height: 277px;
   z-index: 1;
-  width: 249px;
+  width: 303px;
 }
 
 .section_01 .items {
@@ -491,7 +500,6 @@ button:focus, input:focus, a:focus {
 }
 
 .section_01 .listItems ul {
-  line-height: 1.8;
   padding: 25px 0;
 }
 
@@ -517,6 +525,11 @@ button:focus, input:focus, a:focus {
 
 .section_01 .note {
   padding-top: 25px;
+}
+
+.section_01 .note li {
+  text-indent: -14px;
+  padding-left: 14px;
 }
 
 .section_01 .space {
@@ -654,7 +667,7 @@ button:focus, input:focus, a:focus {
   border-radius: 50px;
   position: relative;
   z-index: 2;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -761,6 +774,24 @@ button:focus, input:focus, a:focus {
 }
 
 /*-----------------------
+        Responsive for device < 1300px
+-----------------------------------------*/
+@media screen and (max-width: 1300px) {
+  .section_01 .paralax1 {
+    left: 70%;
+  }
+  .section_01 .paralax2 {
+    right: 70%;
+  }
+  .section_01 .paralax3 {
+    right: 70%;
+  }
+  .section_01 .paralax4 {
+    left: 70%;
+  }
+}
+
+/*-----------------------
         Responsive for device < 1160px
 -----------------------------------------*/
 @media screen and (max-width: 1160px) {
@@ -804,31 +835,44 @@ button:focus, input:focus, a:focus {
     display: inherit;
   }
   .container {
-    padding-left: 4.7%;
-    padding-right: 4.7%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .p_sp {
+    width: 270px;
   }
   /*------------------- Typography_SP -------------------*/
+  .title_h2 {
+    width: 270px;
+    margin: auto;
+  }
   .title_h2 .tit_txt {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: -8px;
   }
   .title_h3 .tit_txt {
-    font-size: 3rem;
+    font-size: 2.3rem;
     line-height: 1.5;
   }
   .text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .header .logo {
-    width: 50%;
+    width: 147px;
     text-align: center;
   }
   .header .nav {
-    width: 50%;
+    width: 40%;
   }
   .header .nav_list li {
     font-size: 1.8rem;
     text-align: right;
-    width: 50%;
+    width: 70px;
   }
   .header .nav_list li:not(:first-child) {
     padding-left: 0;
@@ -837,8 +881,12 @@ button:focus, input:focus, a:focus {
     display: none;
   }
   .main_visual {
-    height: 520px;
+    height: 527px;
     background: url("../images/bg_main_sp.jpg") no-repeat bottom center;
+  }
+  .main_visual .main_visual_wrap {
+    background: url("../images/main_visual-img_2_sp.png") no-repeat 32% 100%;
+    background-size: contain;
   }
   .main_visual .main_visual_in {
     -webkit-box-align: start;
@@ -846,41 +894,52 @@ button:focus, input:focus, a:focus {
     align-items: flex-start;
     margin-right: 0;
     background: none;
-    height: 520px;
-    background: url("../images/main_visual-img_sp.png") no-repeat right bottom;
+    height: 527px;
+    background: url("../images/main_visual-img_1_sp.png") no-repeat right bottom;
     background-size: contain;
   }
   .main_visual .title_h2 {
-    margin-left: 0;
     margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main {
-    margin-top: 520px;
+    margin-top: 527px;
   }
   .section_01 {
-    padding: 0;
+    padding: 14px 0 60px;
+    padding-bottom: 60px;
+  }
+  .section_01 .container {
+    padding: 0 15px;
+  }
+  .section_01 .text_tit {
+    font-size: 1.1rem;
+    padding: 20px 0 22px;
   }
   .section_01 .bg_wrap {
-    padding: 30px 3.1% 80px;
+    padding: 19px 10px 25px;
     background: rgba(248, 249, 250, 0.6);
   }
   .section_01 .paralax1 {
+    margin-left: 0;
     background: url("../images/bg_paralax1.jpg") no-repeat;
     background-size: contain;
     position: absolute;
     top: 15px;
     left: 0;
     z-index: 1;
-    width: 100px;
+    width: 101px;
   }
   .section_01 .paralax2 {
     background: url("../images/bg_paralax2.jpg") no-repeat;
     background-size: contain;
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 0;
     z-index: 1;
-    width: 150px;
+    width: 118px;
+    margin-right: 0;
   }
   .section_01 .paralax3 {
     background: url("../images/bg_paralax3.jpg") no-repeat;
@@ -889,16 +948,24 @@ button:focus, input:focus, a:focus {
     bottom: 150px;
     right: 0;
     z-index: 1;
-    width: 90px;
+    width: 72px;
+    margin-right: 0;
   }
   .section_01 .paralax4 {
-    background: url("../images/bg_paralax4.jpg") no-repeat;
+    background: url("../images/bg_paralax4_sp.png") no-repeat;
     position: absolute;
     background-size: contain;
-    bottom: -100px;
+    bottom: -200px;
     left: 0;
     z-index: 1;
-    width: 150px;
+    width: 152px;
+    margin-left: 0;
+  }
+  .section_01 .listItems .title_h3 {
+    padding-bottom: 18px;
+  }
+  .section_01 .listItems ul {
+    padding: 28px 0;
   }
   .section_01 .listItems .items {
     width: 100%;
@@ -913,7 +980,7 @@ button:focus, input:focus, a:focus {
     display: none;
   }
   .section_01 .avatar {
-    padding-top: 20px !important;
+    padding-top: 30px !important;
     text-align: center;
   }
   .section_01 .listItem_02 {
@@ -923,18 +990,28 @@ button:focus, input:focus, a:focus {
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
   }
+  .section_01 .note li {
+    text-indent: -12px;
+    padding-left: 11px;
+  }
   .section_02 {
     padding-top: 35px;
+    background-image: url("../images/bg_02_sp.jpg");
   }
   .section_02 .description {
-    padding: 50px 0 40px;
+    padding: 50px 0 25px;
   }
   .section_02 .text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
   }
+  .section_02 .note_right .text {
+    line-height: 1.7;
+    font-size: 1rem;
+  }
   .section_02 .note_right span {
-    font-size: 1.7rem;
+    padding-top: 8px;
+    font-size: 1.3rem;
   }
   .section_03 {
     padding: 30px 0 35px;
@@ -1013,7 +1090,7 @@ button:focus, input:focus, a:focus {
     margin-top: 0;
   }
   .section_03 .img_banner img {
-    width: 40%;
+    width: 38.6%;
   }
   .section_03 .img_banner .text {
     text-align: left;
@@ -1021,38 +1098,54 @@ button:focus, input:focus, a:focus {
     padding-top: 0;
     margin-right: 0;
     margin-top: -5.3%;
+    font-size: 1.4rem;
   }
   .section_04 {
-    padding: 40px 0 70px;
+    padding: 40px 0 55px;
   }
   .section_04 .title_h2 {
     padding-bottom: 45px;
   }
   .section_04 .listItems .title_h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 12px;
   }
   .section_04 .listItems .text {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .section_04 .listItems .items {
     width: 100%;
     margin-bottom: 15px;
+    padding: 14px;
   }
   .section_04 .btn {
-    padding-top: 20px;
+    max-width: 165px;
+    padding-top: 10px;
     margin: auto;
   }
+  .section_04 .btn a {
+    padding: 9px;
+    font-size: 1rem;
+  }
   .section_04 .btn a:after {
+    top: calc(50% - 4px);
     right: 20%;
+    width: 9px;
+    height: 7px;
+    background-size: contain;
   }
   .footer {
     padding-top: 42px;
   }
   .footer .social {
-    padding: 30px 0 40px;
+    padding: 25px 0 40px;
   }
   .footer .social a {
     margin: 0 15px;
-    width: 15%;
+    width: 40px;
+  }
+  .footer .copyright {
+    padding: 14px 0;
+    font-size: .9rem;
   }
 }
