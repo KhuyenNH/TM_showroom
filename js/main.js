@@ -6,14 +6,14 @@ if (wBrowser < 768) {
     });
     $(window).on("deviceorientation", function( event ) {
 		if (window.matchMedia("(orientation: portrait)").matches) {
-            $('.bg_main-shadow2, .main_visual_in').css('background-size', wBrowser +"px");
+            $('.main_visual_in').css('background-size', wBrowser +"px");
 		}
 		if (window.matchMedia("(orientation: landscape)").matches) {
-            $('.bg_main-shadow2, .main_visual_in').css('background-size', 320 +"px");
+            $('.main_visual_in').css('background-size', 320 +"px");
+
+            $('.main_visual_in').css('background-image', "../images/main_visual-img_l_sp.png");
 		}
    });
-
-
 } else {
     var posScroll = 100;
     $('img').each(function() {
@@ -62,7 +62,6 @@ $(window).resize(function() {
         $('meta[name="viewport"]').attr('content', 'width=device-width, user-scalable=no, shrink-to-fit=no');
     }
 }).resize();
-
 
 setTimeout(function () {
     $('.fadeUpTit').addClass('ef-slide');

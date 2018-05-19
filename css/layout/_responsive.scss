@@ -124,23 +124,24 @@
             position: relative;
         }
         .bg_main-shadow2 {
-            position: absolute;
-            width: 320px;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('../images/main_visual-img_2_sp.png') no-repeat 32% 100%;
-            // background-size: contain;
-            background-size: 320px;
-            animation: shadowBgSp infinite;
-            animation-duration: 2500ms;
-            -moz-animation: shadowBgSp infinite;
-            -moz-animation-duration: 2500ms;
-            -webkit-animation: shadowBgSp infinite;
-            -webkit-animation-duration: 2500ms;
-            -ms-animation: shadowBgSp infinite;
-            -ms-animation-duration: 2500ms;
+            // position: absolute;
+            // width: 320px;
+            // top: 0;
+            // left: 0;
+            // right: 0;
+            // bottom: 0;
+            // background: url('../images/main_visual-img_2_sp.png') no-repeat 132% 100%;
+            // // background-size: contain;
+            // background-size: 320px;
+            // animation: shadowBgSp;
+            // animation-duration: 2500ms;
+            // -moz-animation: shadowBgSp;
+            // -moz-animation-duration: 2500ms;
+            // -webkit-animation: shadowBgSp;
+            // -webkit-animation-duration: 2500ms;
+            // -ms-animation: shadowBgSp;
+            // -ms-animation-duration: 2500ms;
+            display: none;
         }
         .bg_main-shadow3 {
             // position: absolute;
@@ -208,7 +209,7 @@
             margin-right: 0;
             background: none;
             height: 528px;
-            background: url('../images/main_visual-img_1_sp.png') no-repeat right bottom;
+            background: url('../images/main_visual-img_sp.png') no-repeat right bottom;
             // background-size: contain;
             background-size: 320px;
         }

@@ -34,145 +34,103 @@
 .mr0 {
     margin-right: 0!important;
 }
-
-// @keyframes shadowBg {
-//     0% {
-//         background: url('../images/main_visual-img_2_sp.png') no-repeat -50% 100%;
-//     }
-//     20% {
-//         background: url('../images/main_visual-img_2_sp.png') no-repeat -10% 100%;
-//     }
-//     40% {
-//         background: url('../images/main_visual-img_2_sp.png') no-repeat 20% 100%;
-//     }
-//     100% {
-//         background: url('../images/main_visual-img_2_sp.png') no-repeat 100% 100%;
-//     }
-// }
-@keyframes shadowBg {
-    0% {
-        background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
-    }
-    12% {
-        background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-    }
-    25% {
-        background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
-    }
-
-    26% {
-        background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
-    }
-    37% {
-        background: url('../images/main_visual-img_3.png') no-repeat 55% 100%;
-    }
-    50% {
-        background: url('../images/main_visual-img_3.png') no-repeat -400% 100%;
-    }
-
-    51% {
-        background: url('../images/main_visual-img_4.png') no-repeat 400% 100%;
-    }
-    63% {
-        background: url('../images/main_visual-img_4.png') no-repeat 55% 100%;
-    }
-    75% {
-        background: url('../images/main_visual-img_4.png') no-repeat -400% 100%;
-    }
-
-    56% {
-        background: url('../images/main_visual-img_5.png') no-repeat 400% 100%;
-    }
-    87% {
-        background: url('../images/main_visual-img_5.png') no-repeat 55% 100%;
-    }
-    100% {
-        background: url('../images/main_visual-img_5.png') no-repeat -400% 100%;
-    }
-
+@keyframes bgSlide {
+	0% {
+    background-position: 150vw 100%;
+  }
+  20% {
+		background-position: center 100%;
+  }
+  30% {
+    background-position: center 100%;
+  }
+  60% {
+		background-position: -150vw 100%;
+  }
+  100% {
+    background-position: -200vw 100%;
+  }
 }
-// @-moz-keyframes shadowBg {
-//     0% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
-//     }
-//     50% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     60% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     70% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     100% {
-//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
-//     }
-// }
-// @-webkit-keyframes shadowBg {
-//     0% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
-//     }
-//     50% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     60% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     70% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     100% {
-//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
-//     }
-// }
-// @-o-keyframes shadowBg {
-//     0% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
-//     }
-//     50% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     60% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     70% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     100% {
-//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
-//     }
-// }
-// @-ms-keyframes shadowBg {
-//     0% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 400% 100%;
-//     }
-//     50% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     60% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     70% {
-//         background: url('../images/main_visual-img_2.png') no-repeat 55% 100%;
-//     }
-//     100% {
-//         background: url('../images/main_visual-img_2.png') no-repeat -400% 100%;
-//     }
-// }
+@-moz-keyframes bgSlide {
+	0% {
+    background-position: 150vw 100%;
+  }
+  20% {
+		background-position: center 100%;
+  }
+  30% {
+    background-position: center 100%;
+  }
+  60% {
+		background-position: -150vw 100%;
+  }
+  100% {
+    background-position: -200vw 100%;
+  }
+}
+@-ms-keyframes bgSlide {
+	0% {
+    background-position: 150vw 100%;
+  }
+  20% {
+		background-position: center 100%;
+  }
+  30% {
+    background-position: center 100%;
+  }
+  60% {
+		background-position: -150vw 100%;
+  }
+  100% {
+    background-position: -200vw 100%;
+  }
+}
+@-o-keyframes bgSlide {
+	0% {
+    background-position: 150vw 100%;
+  }
+  20% {
+		background-position: center 100%;
+  }
+  30% {
+    background-position: center 100%;
+  }
+  60% {
+		background-position: -150vw 100%;
+  }
+  100% {
+    background-position: -200vw 100%;
+  }
+}
+
+.slide_item {
+    animation: bgSlide 10s linear infinite 0s;
+    background-size: 30vw 100%;
+    &.bg_main-shadow2 {
+        background: url('../images/main_visual-img_2.png') no-repeat bottom;
+        background-position: 150vw 100%;
+    }
+    &.bg_main-shadow3 {
+        background: url('../images/main_visual-img_3.png') no-repeat bottom;
+        background-position: 150vw 100%;
+        animation-delay: 3.5s;
+    }
+    &.bg_main-shadow4 {
+        background: url('../images/main_visual-img_4.png') no-repeat bottom;
+        background-position: 150vw 100%;
+        animation-delay: 7s;
+    }
+    &.bg_main-shadow5 {
+        background: url('../images/main_visual-img_5.png') no-repeat bottom;
+        background-position: 150vw 100%;
+        animation-delay: 10.5s;
+    }
+}
 @keyframes shadowBgSp {
     0% {
         left: 200%;
     }
-    50% {
-        left: 0%;
-    }
-    60% {
-        left: 0%;
-    }
-    70% {
-        left: 0%;
-    }
     100% {
-        left: -200%;
+        left: 100%;
     }
 }
